@@ -1,0 +1,44 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-02-21 01:04] ** ComfyUI startup time: 2025-02-21 01:04:58.190979
+[2025-02-21 01:04] ** Platform: Windows
+[2025-02-21 01:04] ** Python version: 3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]
+[2025-02-21 01:04] ** Python executable: C:\Users\dervl\AppData\Local\Programs\Python\Python310\python.exe
+[2025-02-21 01:04] ** ComfyUI Path: C:\Users\dervl\ComfyUIUpscale\ComfyUI
+[2025-02-21 01:04] ** Log path: C:\Users\dervl\ComfyUIUpscale\ComfyUI\comfyui.log
+[2025-02-21 01:04] [START] Security scan
+[2025-02-21 01:04] [DONE] Security scan
+[2025-02-21 01:04] [ComfyUI-Manager] Logging failed: [WinError 32] Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird: 'comfyui_8288.log' -> 'comfyui_8288.prev.log'
+[2025-02-21 01:04] ## ComfyUI-Manager: installing dependencies done.
+[2025-02-21 01:04] ** ComfyUI startup time: 2025-02-21 01:04:59.494051
+[2025-02-21 01:04] ** Platform: Windows
+[2025-02-21 01:04] ** Python version: 3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]
+[2025-02-21 01:04] ** Python executable: C:\Users\dervl\AppData\Local\Programs\Python\Python310\python.exe
+[2025-02-21 01:04] ** Log path: C:\Users\dervl\ComfyUIUpscale\ComfyUI\comfyui.log
+[2025-02-21 01:04] 
+Prestartup times for custom nodes:
+[2025-02-21 01:04]    0.0 seconds: C:\Users\dervl\ComfyUIUpscale\ComfyUI\custom_nodes\rgthree-comfy
+[2025-02-21 01:04]    0.0 seconds: C:\Users\dervl\ComfyUIUpscale\ComfyUI\custom_nodes\ComfyUI-Marigold
+[2025-02-21 01:04]    0.0 seconds: C:\Users\dervl\ComfyUIUpscale\ComfyUI\custom_nodes\ComfyUI-Easy-Use
+[2025-02-21 01:04]    1.3 seconds: C:\Users\dervl\ComfyUIUpscale\ComfyUI\custom_nodes\ComfyUI-Manager-main
+[2025-02-21 01:04]    3.2 seconds: C:\Users\dervl\ComfyUIUpscale\ComfyUI\custom_nodes\ComfyUI-Manager
+[2025-02-21 01:04] 
+Traceback (most recent call last):
+[2025-02-21 01:05]   File "C:\Users\dervl\ComfyUIUpscale\ComfyUI\main.py", line 90, in <module>
+[2025-02-21 01:05]     import execution
+[2025-02-21 01:05]   File "C:\Users\dervl\ComfyUIUpscale\ComfyUI\execution.py", line 13, in <module>
+[2025-02-21 01:05]     import nodes
+[2025-02-21 01:05]   File "C:\Users\dervl\ComfyUIUpscale\ComfyUI\nodes.py", line 21, in <module>
+[2025-02-21 01:05]     import comfy.diffusers_load
+[2025-02-21 01:05]   File "C:\Users\dervl\ComfyUIUpscale\ComfyUI\comfy\diffusers_load.py", line 3, in <module>
+[2025-02-21 01:05]     import comfy.sd
+[2025-02-21 01:05]   File "C:\Users\dervl\ComfyUIUpscale\ComfyUI\comfy\sd.py", line 5, in <module>
+[2025-02-21 01:05]     from comfy import model_management
+[2025-02-21 01:05]   File "C:\Users\dervl\ComfyUIUpscale\ComfyUI\comfy\model_management.py", line 143, in <module>
+[2025-02-21 01:05]     total_vram = get_total_memory(get_torch_device()) / (1024 * 1024)
+[2025-02-21 01:05]   File "C:\Users\dervl\ComfyUIUpscale\ComfyUI\comfy\model_management.py", line 112, in get_torch_device
+[2025-02-21 01:05]     return torch.device(torch.cuda.current_device())
+[2025-02-21 01:05]   File "C:\Users\dervl\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\cuda\__init__.py", line 940, in current_device
+[2025-02-21 01:05]     _lazy_init()
+[2025-02-21 01:05]   File "C:\Users\dervl\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\cuda\__init__.py", line 310, in _lazy_init
+[2025-02-21 01:05]     raise AssertionError("Torch not compiled with CUDA enabled")
+[2025-02-21 01:05] AssertionError: Torch not compiled with CUDA enabled
